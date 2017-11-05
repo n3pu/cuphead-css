@@ -1,0 +1,1661 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffd010;
+    display: flex;
+    justify-content: center;
+}
+
+.cena {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100vh;
+}
+
+.cuphead {
+    position: relative;
+    width: 220px;
+    height: 290px;
+    left: 25px;
+}
+
+.cuphead .canudo {
+    position: absolute;
+}
+
+.cuphead .canudo .canudo-1,
+.cuphead .canudo .canudo-2 {
+    position: absolute;
+    background: #000;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.cuphead .canudo .segmentoB,
+.cuphead .canudo .segmentoV {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.cuphead .canudo .segmentoB {
+    background: #fff;
+}
+
+.cuphead .canudo .segmentoB.b1 {
+    left: -30px;
+    top: -12px;
+}
+
+.cuphead .canudo .segmentoB.b2 {
+    left: 25px;
+    top: -16px;
+}
+
+.cuphead .canudo .segmentoV {
+    background: #df4418;
+}
+
+.cuphead .canudo .segmentoV.v1 {
+    left: 10px;
+    top: -16px;
+}
+
+.cuphead .canudo .canudo-1 {
+    height: 26px;
+    width: 50px;
+    top: -35px;
+    left: 30px;
+    transform: rotate(-5deg);
+}
+
+.cuphead .canudo .canudo-2 {
+    height: 26px;
+    width: 40px;
+    top: -26px;
+    left: 54px;
+    transform: rotate(70deg);
+    border-radius: 0 0 0 20px;
+    border-left: 1px solid black;
+}
+
+.cuphead .cabeca {
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 60px;
+    z-index: 3;
+}
+
+.cuphead .xicara-topo {
+    width: 135px;
+    height: 20px;
+    background: #fff;
+    border: 3px solid black;
+    position: absolute;
+    top: -2px;
+    left: 50px;
+    border-bottom: 0;
+    box-sizing: border-box;
+    border-radius: 100% 100% 0 0;
+    z-index: 3;
+}
+
+.cuphead .xicara {
+    width: 135px;
+    height: 80px;
+    background: #fff;
+    border: 3px solid black;
+    border-radius: 0 0 120px 120px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.cuphead .xicara .boca-topo {
+    position: absolute;
+    top: 18px;
+    left: 28px;
+    height: 25px;
+    width: 65px;
+    background: #fff;
+    z-index: 6;
+    border-radius: 100%;
+    transform: rotate(10deg);
+}
+
+.cuphead .xicara .boca {
+    position: absolute;
+    top: 38px;
+    left: 25px;
+    height: 30px;
+    width: 65px;
+    background: #000;
+    z-index: 6;
+    border-radius: 20px 20px 100% 100%;
+    border: 2px solid black;
+    transform: rotate(10deg);
+    overflow: hidden;
+}
+
+.cuphead .xicara .boca .lingua1,
+.cuphead .xicara .boca .lingua2 {
+    background: #df4418;
+    position: absolute;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.cuphead .xicara .boca .lingua1 {
+    top: 8px;
+    left: -10px;
+}
+
+.cuphead .xicara .boca .lingua1:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    top: 3px;
+    left: 22px;
+    background: #000;
+    z-index: 2;
+    border-radius: 0 100%;
+    transform: rotate(35deg);
+}
+
+.cuphead .xicara .boca .lingua2 {
+    top: 14px;
+    left: 8px;
+}
+
+.cuphead .olhos {
+    position: absolute;
+    z-index: 4;
+}
+
+.cuphead .olhos .olhoE {
+    position: absolute;
+    top: -1px;
+    left: 78px;
+    height: 50px;
+    width: 70px;
+    border: 2px solid black;
+    border-top: 0;
+    border-radius: 0 0 60px 80px;
+}
+
+.cuphead .olhos .olhoE:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -20px;
+    background: #000;
+    width: 20px;
+    height: 34px;
+    border-radius: 45%;
+    z-index: 1;
+}
+
+.cuphead .olhos .olhoE:before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: -23px;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    z-index: 6;
+    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.cuphead .olhos .olhoD {
+    position: absolute;
+    top: 5px;
+    left: 146px;
+    height: 40px;
+    width: 38px;
+    border: 2px solid black;
+    border-top: 0;
+    border-radius: 0 0 60px 80px;
+}
+
+.cuphead .olhos .olhoD:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 65px;
+    background: #000;
+    width: 20px;
+    height: 34px;
+    border-radius: 45%;
+    z-index: 1;
+}
+
+.cuphead .olhos .olhoD:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 62px;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    z-index: 6;
+    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.cuphead .nariz {
+    position: absolute;
+    top: 28px;
+    left: 140px;
+    height: 18px;
+    width: 25px;
+    border: 2px solid black;
+    background: #df4418;
+    border-radius: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.cuphead .alca-xicara {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 3px solid black;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.cuphead .alca-xicara .elipse2-alca {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    background: #ffd010;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.cuphead .tronco {
+    position: absolute;
+    top: 75px;
+    left: 110px;
+    height: 100px;
+    width: 55px;
+    background: #000;
+    transform: rotate(-25deg);
+    z-index: 2;
+    border-radius: 0 0 100% 100%;
+}
+
+.cuphead .roupa {
+    position: absolute;
+    top: 62px;
+    left: 15px;
+    height: 50px;
+    width: 40px;
+    background: #df4418;
+    border-radius: 30px 30px 100% 100%;
+    border: 2px solid black;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+
+.cuphead .roupaD,
+.cuphead .roupaE {
+    position: absolute;
+    background: #df4418;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.cuphead .roupaDD,
+.cuphead .roupaEE {
+    position: absolute;
+    background: #df4418;
+    z-index: 3;
+}
+
+.cuphead .roupaD {
+    top: 75px;
+    left: 20px;
+    height: 40px;
+    width: 28px;
+    transform: rotate(10deg);
+}
+
+.cuphead .roupaE {
+    top: 68px;
+    left: -5px;
+    height: 40px;
+    width: 28px;
+    transform: rotate(25deg);
+    z-index: 2;
+}
+
+.cuphead .roupaDD {
+    top: 75px;
+    left: 22px;
+    height: 38px;
+    width: 24px;
+    transform: rotate(10deg);
+}
+
+.cuphead .roupaEE {
+    top: 68px;
+    left: -2px;
+    height: 38px;
+    width: 26px;
+    transform: rotate(25deg);
+    z-index: 4;
+}
+
+.cuphead .roupaEE:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -3px;
+    height: 5px;
+    width: 23px;
+    border-radius: 100%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.cuphead .roupaEE:before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -2px;
+    height: 8px;
+    width: 23px;
+    background: #df4418;
+    border-radius: 0 0 50% 50%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.cuphead .roupaC {
+    position: absolute;
+    background: #df4418;
+    top: 60px;
+    left: -3px;
+    height: 20px;
+    width: 58px;
+    border-radius: 100%;
+    transform: rotate(8deg);
+    z-index: 4;
+    border-top: 3px solid black;
+}
+
+.cuphead .roupaC:after {
+    content: '';
+    background: #000;
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    top: 38px;
+    left: 25px;
+    border-radius: 0 0 100%;
+    transform: rotate(8deg);
+}
+
+.cuphead .roupaC:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    height: 2px;
+    width: 6px;
+    top: 41px;
+    left: 46px;
+    border-radius: 100% 0 0;
+    transform: rotate(-22deg);
+}
+
+.cuphead .cambitoD,
+.cuphead .cambitoE {
+    position: absolute;
+    background: #fff;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.cuphead .cambitoD {
+    width: 15px;
+    height: 50px;
+    top: 182px;
+    left: 125px;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+
+.cuphead .cambitoD:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -8px;
+    height: 10px;
+    width: 26px;
+    border-radius: 100%;
+    border-top: 2px solid black;
+    transform: rotate(-5deg);
+}
+
+.cuphead .cambitoE {
+    width: 15px;
+    height: 45px;
+    top: 180px;
+    left: 155px;
+    transform: rotate(5deg);
+    z-index: 6;
+    border-radius: 0 0 10px 10px;
+}
+
+.cuphead .cambitoE:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    height: 5px;
+    width: 24px;
+    border-bottom: 2px solid black;
+    background: #df4418;
+    border-radius: 0 0 100% 100%;
+    transform: rotate(-20deg);
+}
+
+.cuphead .sapatos {
+    position: absolute;
+    top: -10px;
+}
+
+.cuphead .sapatos .sapatoD div[class^=sapatoD],
+.cuphead .sapatos .sapatoE div[class^=sapatoE] {
+    background: #df4418;
+    border: 2px solid black;
+    position: absolute;
+}
+
+.cuphead .sapatos .sapatoD1 {
+    top: 226px;
+    left: 112px;
+    height: 16px;
+    width: 30px;
+    border-radius: 30px;
+    transform: rotate(12deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD2 {
+    top: 236px;
+    left: 98px;
+    height: 35px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(12deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD2:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 16px;
+    height: 10px;
+    width: 13px;
+    background: #df4418;
+    transform: rotate(0deg);
+}
+
+.cuphead .sapatos .sapatoD3 {
+    top: 210px;
+    left: 68px;
+    height: 50px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(-8deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD3:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    height: 28px;
+    width: 18px;
+    background: #df4418;
+    transform: rotate(30deg);
+}
+
+.cuphead .sapatos .sapatoD4 {
+    top: 220px;
+    left: 64px;
+    height: 60px;
+    width: 44px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: perspective(50px) rotate3d(2, 1, 1, -45deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD5 {
+    top: 248px;
+    left: 95px;
+    height: 40px;
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: perspective(40px) rotate3d(1, 1, 1, -60deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD5:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    height: 28px;
+    width: 18px;
+    background: #df4418;
+    transform: rotate(-16deg);
+}
+
+.cuphead .sapatos .sapatoD6 {
+    top: 228px;
+    left: 65px;
+    height: 52px;
+    width: 39px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: perspective(40px) rotate3d(1, 1, 1, -55deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD7 {
+    top: 258px;
+    left: 95px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    transform: perspective(50px) rotate3d(1, 1, 1, -55deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoD7:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 4px;
+    height: 20px;
+    width: 15px;
+    background: #df4418;
+    transform: rotate(-16deg);
+    z-index: 1;
+}
+
+.cuphead .sapatos .sapatoD7:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    height: 2px;
+    width: 17px;
+    background: #000;
+    transform: rotate(-6deg);
+    z-index: 2;
+}
+
+.cuphead .sapatos .sapatoE1 {
+    top: 226px;
+    left: 145px;
+    height: 16px;
+    width: 30px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoE1:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    height: 10px;
+    width: 13px;
+    background: #df4418;
+    transform: rotate(0deg);
+}
+
+.cuphead .sapatos .sapatoE2 {
+    top: 235px;
+    left: 138px;
+    height: 40px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.cuphead .sapatos .sapatoE3 {
+    top: 240px;
+    left: 168px;
+    height: 38px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.cuphead .sapatos .sapatoE3:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 24px;
+    width: 18px;
+    background: #df4418;
+    transform: rotate(10deg);
+}
+
+.cuphead .sapatos .sapatoE4 {
+    top: 270px;
+    left: 144px;
+    height: 10px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.cuphead .sapatos .sapatoE5 {
+    top: 265px;
+    left: 144px;
+    height: 10px;
+    width: 27px;
+    border: 0 !important;
+    border-left: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.cuphead .sapatos .sapatoE6 {
+    top: 273px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.cuphead .sapatos .sapatoE7 {
+    top: 268px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border: 0 !important;
+    border-right: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.cuphead .bracos {
+    position: absolute;
+}
+
+.cuphead .bracos .bracoD,
+.cuphead .bracos .bracoDD,
+.cuphead .bracos .bracoE,
+.cuphead .bracos .bracoEE {
+    position: absolute;
+    background: #000;
+}
+
+.cuphead .bracos .bracoD {
+    top: 110px;
+    left: 75px;
+    width: 35px;
+    height: 14px;
+    transform: rotate(-20deg);
+}
+
+.cuphead .bracos .bracoDD {
+    top: 122px;
+    left: 69px;
+    width: 35px;
+    height: 14px;
+    transform: rotate(40deg);
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.cuphead .bracos .luvaD {
+    position: absolute;
+    top: 128px;
+    left: 86px;
+    width: 25px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.cuphead .bracos .luvaDD {
+    position: absolute;
+    top: 130px;
+    left: 88px;
+    width: 45px;
+    height: 40px;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.cuphead .bracos .luvaDD:after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.cuphead .bracos .luvaDD .D1,
+.cuphead .bracos .luvaDD .D2,
+.cuphead .bracos .luvaDD .D3 {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px 0 100% 0;
+}
+
+.cuphead .bracos .luvaDD .D1 {
+    top: 5px;
+    left: 22px;
+    transform: rotate(-5deg);
+}
+
+.cuphead .bracos .luvaDD .D2 {
+    top: 12px;
+    left: 22px;
+    transform: rotate(10deg);
+}
+
+.cuphead .bracos .luvaDD .D3 {
+    top: 19px;
+    left: 22px;
+    transform: rotate(20deg);
+}
+
+.cuphead .bracos .luvaDDD {
+    position: absolute;
+    top: 156px;
+    left: 98px;
+    width: 30px;
+    height: 18px;
+    background: #fff;
+    transform: rotate(-10deg);
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.cuphead .bracos .bracoE {
+    top: 110px;
+    left: 155px;
+    width: 30px;
+    height: 14px;
+    transform: rotate(15deg);
+}
+
+.cuphead .bracos .bracoEE {
+    top: 126px;
+    left: 149px;
+    width: 45px;
+    height: 14px;
+    transform: rotate(120deg);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.cuphead .sombra {
+    position: absolute;
+    top: 252px;
+    left: 80px;
+    height: 30px;
+    width: 140px;
+    background: #000;
+    border-radius: 100%;
+}
+
+.mugman {
+    position: relative;
+    width: 220px;
+    height: 290px;
+    left: -25px;
+}
+
+.mugman .canudo {
+    position: absolute;
+}
+
+.mugman .canudo .canudo-1 {
+    position: absolute;
+    background: #000;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.mugman .canudo .segmentoB,
+.mugman .canudo .segmentoA {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.mugman .canudo .segmentoB {
+    background: #fff;
+}
+
+.mugman .canudo .segmentoB.b1 {
+    left: -30px;
+    top: -12px;
+}
+
+.mugman .canudo .segmentoB.b2 {
+    left: 25px;
+    top: -16px;
+}
+
+.mugman .canudo .segmentoA {
+    background: #63a0bf;
+}
+
+.mugman .canudo .segmentoA.a1 {
+    left: 10px;
+    top: -16px;
+}
+
+.mugman .canudo .canudo-1 {
+    height: 26px;
+    width: 50px;
+    top: -25px;
+    left: 130px;
+    transform: rotate(125deg);
+}
+
+.mugman .cabeca {
+    transform: rotate(15deg);
+    position: absolute;
+    top: -5px;
+    z-index: 9;
+}
+
+.mugman .xicara-topo {
+    width: 120px;
+    height: 20px;
+    background: #fff;
+    border: 3px solid black;
+    position: absolute;
+    top: -2px;
+    left: 50px;
+    border-bottom: 0;
+    box-sizing: border-box;
+    border-radius: 100% 100% 0 0;
+    z-index: 3;
+}
+
+.mugman .xicara {
+    width: 120px;
+    height: 85px;
+    background: #fff;
+    border: 3px solid black;
+    border-radius: 0 0 120px 120px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mugman .xicara .boca-topo {
+    position: absolute;
+    top: 22px;
+    left: 28px;
+    height: 25px;
+    width: 65px;
+    background: #fff;
+    z-index: 6;
+    border-radius: 100%;
+    transform: rotate(-20deg);
+}
+
+.mugman .xicara .boca {
+    position: absolute;
+    top: 42px;
+    right: 14px;
+    height: 30px;
+    width: 65px;
+    background: #000;
+    z-index: 6;
+    border-radius: 20px 20px 100% 100%;
+    border: 2px solid black;
+    transform: rotate(-20deg);
+    overflow: hidden;
+}
+
+.mugman .xicara .boca .lingua1,
+.mugman .xicara .boca .lingua2 {
+    background: #df4418;
+    position: absolute;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.mugman .xicara .boca .lingua1 {
+    top: 8px;
+    right: -10px;
+}
+
+.mugman .xicara .boca .lingua1:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    top: 3px;
+    right: 22px;
+    background: #000;
+    z-index: 2;
+    border-radius: 0 100%;
+    transform: rotate(-35deg);
+}
+
+.mugman .xicara .boca .lingua2 {
+    top: 14px;
+    right: 8px;
+}
+
+.mugman .olhos {
+    position: absolute;
+    z-index: 4;
+}
+
+.mugman .olhos .olhoE {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.mugman .olhos .olhoE:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    background: #000;
+    width: 20px;
+    height: 34px;
+    border-radius: 45%;
+    z-index: 1;
+}
+
+.mugman .olhos .olhoE:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 9px;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    z-index: 6;
+    -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+.mugman .olhos .olhoD {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    height: 50px;
+    width: 34px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.mugman .olhos .olhoD:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    background: #000;
+    width: 20px;
+    height: 34px;
+    border-radius: 45%;
+    z-index: 1;
+}
+
+.mugman .olhos .olhoD:before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    z-index: 6;
+    -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+.mugman .nariz {
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    height: 40px;
+    width: 50px;
+    border: 2px solid black;
+    background: #63a0bf;
+    border-radius: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.mugman .nariz:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background: #fff;
+    width: 10px;
+    height: 15px;
+    border-radius: 5px 0 0 5px;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.mugman .alca-xicara {
+    position: absolute;
+    top: 12px;
+    left: 135px;
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border: 3px solid black;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.mugman .alca-xicara .elipse2-alca {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    background: #ffd010;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.mugman .tronco {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    height: 100px;
+    width: 55px;
+    background: #000;
+    transform: rotate(25deg);
+    z-index: 3;
+    border-radius: 0 0 100% 100%;
+}
+
+.mugman .roupa {
+    position: absolute;
+    top: 60px;
+    left: 3px;
+    height: 40px;
+    width: 60px;
+    background: #63a0bf;
+    border-radius: 10px 10px 100% 100%;
+    border: 2px solid black;
+    border-top: 0;
+    transform: rotate(-23deg);
+    z-index: 3;
+}
+
+.mugman .roupaD,
+.mugman .roupaE {
+    position: absolute;
+    background: #63a0bf;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.mugman .roupaDD,
+.mugman .roupaEE {
+    position: absolute;
+    background: #63a0bf;
+    z-index: 3;
+}
+
+.mugman .roupaD {
+    top: 70px;
+    left: 12px;
+    height: 40px;
+    width: 25px;
+    transform: rotate(-20deg);
+}
+
+.mugman .roupaDD {
+    top: 70px;
+    left: 13px;
+    height: 35px;
+    width: 10px;
+    transform: rotate(-20deg);
+}
+
+.mugman .roupaE {
+    top: 60px;
+    left: 35px;
+    height: 40px;
+    width: 25px;
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+
+.mugman .roupaEE {
+    top: 60px;
+    left: 37px;
+    height: 38px;
+    width: 21px;
+    transform: rotate(-30deg);
+    z-index: 3;
+}
+
+.mugman .roupaC {
+    position: absolute;
+    background: #63a0bf;
+    top: 55px;
+    left: -3px;
+    height: 20px;
+    width: 58px;
+    border-radius: 100%;
+    transform: rotate(-20deg);
+    z-index: 2;
+    border-top: 3px solid black;
+}
+
+.mugman .cambitoD,
+.mugman .cambitoE {
+    position: absolute;
+    background: #fff;
+    border: 2px solid black;
+    border-top: 0;
+}
+
+.mugman .cambitoD {
+    width: 15px;
+    height: 40px;
+    top: 174px;
+    left: 50px;
+    transform: rotate(-10deg);
+    z-index: 2;
+    border-radius: 0 0 25px 25px;
+}
+
+.mugman .cambitoE {
+    width: 15px;
+    height: 40px;
+    top: 175px;
+    left: 85px;
+    transform: rotate(-25deg);
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+}
+
+.mugman .pernas {
+    z-index: 2;
+}
+
+.mugman .sapatos {
+    position: absolute;
+    top: -15px;
+    left: -60px;
+    z-index: 1;
+}
+
+.mugman .sapatos .sapatoD div[class^=sapatoD],
+.mugman .sapatos .sapatoE div[class^=sapatoE] {
+    background: #63a0bf;
+    border: 2px solid black;
+    position: absolute;
+}
+
+.mugman .sapatos .sapatoD {
+    position: absolute;
+    top: -8px;
+    left: 280px;
+    transform: rotatey(180deg);
+}
+
+.mugman .sapatos .sapatoE {
+    position: absolute;
+    top: -6px;
+    z-index: 1;
+}
+
+.mugman .sapatos .sapatoD1 {
+    top: 226px;
+    left: 145px;
+    height: 16px;
+    width: 30px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.mugman .sapatos .sapatoD1:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    height: 10px;
+    width: 13px;
+    background: #63a0bf;
+    transform: rotate(0deg);
+}
+
+.mugman .sapatos .sapatoD2 {
+    top: 235px;
+    left: 138px;
+    height: 40px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.mugman .sapatos .sapatoD3 {
+    top: 240px;
+    left: 168px;
+    height: 38px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.mugman .sapatos .sapatoD3:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 24px;
+    width: 18px;
+    background: #63a0bf;
+    transform: rotate(10deg);
+}
+
+.mugman .sapatos .sapatoD4 {
+    top: 270px;
+    left: 144px;
+    height: 10px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoD5 {
+    top: 265px;
+    left: 144px;
+    height: 10px;
+    width: 27px;
+    border: 0 !important;
+    border-left: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoD6 {
+    top: 273px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoD7 {
+    top: 268px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border: 0 !important;
+    border-right: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoE1 {
+    top: 226px;
+    left: 145px;
+    height: 16px;
+    width: 30px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.mugman .sapatos .sapatoE1:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    height: 10px;
+    width: 13px;
+    background: #63a0bf;
+    transform: rotate(0deg);
+}
+
+.mugman .sapatos .sapatoE2 {
+    top: 235px;
+    left: 138px;
+    height: 40px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 3;
+}
+
+.mugman .sapatos .sapatoE3 {
+    top: 240px;
+    left: 168px;
+    height: 38px;
+    width: 45px;
+    border-radius: 30px;
+    transform: rotate(0deg);
+    z-index: 5;
+}
+
+.mugman .sapatos .sapatoE3:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 24px;
+    width: 18px;
+    background: #63a0bf;
+    transform: rotate(10deg);
+}
+
+.mugman .sapatos .sapatoE4 {
+    top: 270px;
+    left: 144px;
+    height: 10px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoE5 {
+    top: 265px;
+    left: 144px;
+    height: 10px;
+    width: 27px;
+    border: 0 !important;
+    border-left: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoE6 {
+    top: 273px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.mugman .sapatos .sapatoE7 {
+    top: 268px;
+    left: 170px;
+    height: 10px;
+    width: 38px;
+    border: 0 !important;
+    border-right: 2px solid black !important;
+    transform: translatex(0deg);
+    z-index: 2;
+}
+
+.mugman .bracos {
+    position: absolute;
+}
+
+.mugman .bracos .bracoD,
+.mugman .bracos .bracoDD,
+.mugman .bracos .bracoE,
+.mugman .bracos .bracoEE {
+    position: absolute;
+    background: #000;
+    z-index: 8;
+}
+
+.mugman .bracos .bracoD {
+    top: 108px;
+    left: 101px;
+    width: 35px;
+    height: 14px;
+    transform: rotate(20deg);
+}
+
+.mugman .bracos .bracoDD {
+    top: 122px;
+    left: 110px;
+    width: 35px;
+    height: 14px;
+    transform: rotate(-40deg);
+    border-radius: 20px;
+}
+
+.mugman .bracos .maoD {
+    position: absolute;
+    transform: rotatey(180deg);
+    z-index: 6;
+    left: 216px;
+}
+
+.mugman .bracos .maoD .dedo1,
+.mugman .bracos .maoD .dedo2 {
+    position: absolute;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.mugman .bracos .maoD .dedo1 {
+    top: 145px;
+    left: 82px;
+    height: 10px;
+    width: 30px;
+}
+
+.mugman .bracos .maoD .dedo2 {
+    top: 150px;
+    left: 80px;
+    height: 10px;
+    width: 30px;
+}
+
+.mugman .bracos .luvaD {
+    position: absolute;
+    top: 128px;
+    left: 86px;
+    width: 25px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.mugman .bracos .luvaDD {
+    position: absolute;
+    top: 130px;
+    left: 88px;
+    width: 45px;
+    height: 40px;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 100%;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.mugman .bracos .luvaDD:after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.mugman .bracos .luvaDD .D1,
+.mugman .bracos .luvaDD .D2,
+.mugman .bracos .luvaDD .D3 {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px 0 100% 0;
+}
+
+.mugman .bracos .luvaDD .D1 {
+    top: 5px;
+    left: 22px;
+    transform: rotate(-5deg);
+}
+
+.mugman .bracos .luvaDD .D2 {
+    top: 12px;
+    left: 22px;
+    transform: rotate(10deg);
+}
+
+.mugman .bracos .luvaDD .D3 {
+    top: 19px;
+    left: 22px;
+    transform: rotate(20deg);
+}
+
+.mugman .bracos .luvaDDD {
+    position: absolute;
+    top: 157px;
+    left: 80px;
+    width: 40px;
+    height: 13px;
+    background: #fff;
+    transform: rotate(0deg);
+    border-radius: 20px;
+    border: 2px solid black;
+    z-index: 2;
+}
+
+.mugman .bracos .bracoE {
+    top: 100px;
+    left: 30px;
+    width: 30px;
+    height: 14px;
+    transform: rotate(-15deg);
+}
+
+.mugman .bracos .bracoEE {
+    top: 116px;
+    left: 20px;
+    width: 45px;
+    height: 14px;
+    transform: rotate(-120deg);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.mugman .sombra {
+    position: absolute;
+    top: 242px;
+    left: 5px;
+    height: 30px;
+    width: 160px;
+    background: #000;
+    border-radius: 100%;
+}
+
+.by {
+    font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.by a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+
+.by a:hover {
+    color: #ce4a2f;
+}

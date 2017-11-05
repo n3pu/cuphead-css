@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$amarelo: #ffd010;\r\n$azul: #63a0bf;\r\n$vermelho: #df4418;\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    background: $amarelo;\r\n}"
+	],
+	"mappings": ";AAGA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,UAAW;CAC1B;;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAVJ,OAAO;CAWhB",
+	"names": []
+}
